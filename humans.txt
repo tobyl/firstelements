@@ -1,9 +1,0 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
-
-
-/* TEAM */
-  Company: Spotvin Inc
-  Site: http://spotvin.com
-  Twitter: Spotvin
-  Location: Windsor, On
