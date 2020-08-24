@@ -55,7 +55,8 @@
 						<span class="visuallyhidden">Message:</span>
 						<textarea name="message" rows="3"></textarea>
 					</label>
-					<button type="submit">SEND</button>
+					<button id="my-form-button">SEND</button>
+          <p id="my-form-status"></p>
 				</div>
 			</form>
 
@@ -118,7 +119,7 @@
 
     // get the form elements defined in your form HTML above
     
-    var form = document.getElementById("my-form");
+    var form = document.getElementById("contact");
     var button = document.getElementById("my-form-button");
     var status = document.getElementById("my-form-status");
 
