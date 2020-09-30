@@ -1,0 +1,18 @@
+#bio {
+  .circle-img {
+    float: left;
+    margin-right: 1rem;
+  }
+  .bio-title {
+    padding-top: 40px;
+    p {
+      margin: 0;
+      font-size: 1.75rem;
+      line-height: 1.5;
+      small {
+        display: block;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

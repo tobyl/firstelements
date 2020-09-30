@@ -1,0 +1,27 @@
+.cta {
+  position: relative;
+  font-family: 'Barlow Condensed', sans-serif;
+  border-top: 1px solid $light-grey;
+  margin: 3rem 0;
+  padding-top: 2rem;
+  &:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    border: 1px solid $light-grey;
+    border-radius: 15px;
+    background: #fff;
+  }
+  p {
+    font-size: 1.65rem;
+    color: $secondary;
+    margin: 0;
+  }
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}

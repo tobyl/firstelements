@@ -1,0 +1,19 @@
+#training-classes {
+  margin-bottom: 2rem;
+  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+      h4 {
+        margin: 0;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      div {
+        display: none;
+      }
+    }
+  }
+}

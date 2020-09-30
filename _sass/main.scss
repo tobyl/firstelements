@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap');
+
+@import 'vars';
+@import 'utils';
+@import 'normalize';
+@import 'typography';
+@import 'buttons';
+@import 'animations';
+@import 'layout';
+@import 'header';
+@import 'navigation';
+@import 'footer';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'contact';
+@import 'training';
+@import 'animated-title';
+@import 'cta';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url('/assets/img/linen.png');
+  
+}
+
+svg,
+img {
+  display: block;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $secondary;
+}
+
+.content-block {
+  border: 3px solid red;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid $secondary;
+}

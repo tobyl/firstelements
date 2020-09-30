@@ -1,0 +1,118 @@
+#nav-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  overflow: hidden;
+  background: rgba(42,52,57,0.95);
+  opacity: 0;
+  transition: all 0.23s ease-out;
+  z-index: 2;
+  &.visible {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+#nav-wrapper nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -60%);
+  svg {
+    width: 50px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8rem;
+    li {
+      a {
+        display: block;
+        color: #e1e1e1;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.16s ease-out, margin-left 0.5s ease-out, opacity 1s ease-out;
+        svg {
+          position: absolute;
+          left: -50px;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: 0 auto;
+          fill: $primary;
+          width: 32px;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+      > ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        &:before {
+          content: '';
+          display: block;
+          width: 30px;
+          border-top: 1px solid #ccc;
+          margin-bottom: 1rem;
+        }
+        &:after {
+          content: '';
+          display: block;
+          width: 30px;
+          border-top: 1px solid #ccc;
+          margin-top: 1rem;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+#nav-wrapper nav a {
+  margin-left: 2rem;
+  opacity: 0;
+  svg {
+    opacity: 0;
+    transition: opacity 0.69s ease-out;
+  }
+  &.visible {
+    margin-left: 0;
+    opacity: 1;
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+#nav-wrapper #nav-close {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  border: 3px solid #f1f1f1;
+  padding: 15px;
+  border-radius: 50%;
+  transition: border-color 0.12s ease-in-out;
+  svg {
+    width: 20px;
+    fill: #f1f1f1;
+    transition: transform 0.12s ease-in-out, border-color 0.12s ease-in-out;
+  }
+  &:hover {
+    border-color: $primary;
+    svg {
+      transform: scale(1.2);
+      fill: $primary;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#site-header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  #masthead {
+    svg {
+      height: 40px;
+    }
+  }
+  #nav-trigger {
+
+    padding: 10px;
+    border: 1px solid rgba($secondary, 0.5);
+    border-radius: 50%;
+    transition: border-color 241ms ease-out;
+    svg {
+      display: block;
+      width: 26px;
+      height: 26px;
+      fill: $primary;
+    }
+    &:hover {
+      border-color: $secondary;
+    }
+  }
+}

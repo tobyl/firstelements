@@ -1,0 +1,53 @@
+body {
+  color: $copy-colour;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Barlow Condensed';
+  color: $primary;
+  font-weight: 300;
+}
+
+h1 { font-size: 2.5rem }
+h2 { font-size: 2rem }
+h3 { font-size: 1.65rem }
+h4 { font-size: 1.3rem }
+
+strong {
+  font-family: 'Barlow Condensed';
+  color: $primary;
+  font-weight: 400;
+}
+
+p {
+  strong {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-weight: 500;
+  }
+}
+
+p.lead,
+ul.lead {
+  font-family: 'Barlow Condensed';
+  font-size: 1.5rem;
+  color: $secondary;
+}
+
+ul.float-list {
+  li {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

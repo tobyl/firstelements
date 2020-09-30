@@ -1,0 +1,217 @@
+#home-banner {
+  position: relative;
+  height: 400px;
+  background: url('/assets/img/main-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#rotator {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    border: 3px solid #fff;
+  }
+}
+
+.full-copy {
+  position: absolute;
+  right: 8%;
+  width: 42%;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  background: rgba(0,48,23,0.8);
+  border-radius: 8px;
+  .copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    padding: 15px;
+    text-align: center;
+    z-index: -1;
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: lighten($primary, 10%);
+    }
+    p {
+      margin: 0;
+      color: #fff;
+    }
+    p.more-link {
+      padding-top: 1rem;
+      a {
+        display: inline-block;
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        border-radius: 20px;
+        transition: all 111ms ease-out;
+        &:hover {
+          color: lighten($primary, 25%);
+          border-color: lighten($primary, 25%);
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 5px);
+    left: -14px;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent; 
+    border-right: 14px solid rgba(0,48,23,0.8); 
+  }
+}
+
+.full-copy .training-copy { animation: training 15s linear infinite }
+.full-copy .environmental-copy { animation: environmental 15s linear infinite }
+.full-copy .health-safety-copy { animation: health-safety 15s linear infinite }
+
+#a { animation: a 15s linear infinite }
+#b { animation: b 15s linear infinite }
+#c { animation: c 15s linear infinite }
+
+#a,
+#b,
+#c {
+  position: absolute;
+  top: 156px;
+  left: calc(50% - 45px);
+  border: 3px solid $primary;
+  width: 90px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+  svg {
+    fill: $primary;
+  }
+}
+
+@keyframes a {
+	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@keyframes b {
+	from { 	transform: rotate(120deg) translateX(100px) rotate(-120deg); }
+	to   {  transform: rotate(480deg) translateX(100px) rotate(-480deg); }
+}
+
+@keyframes c {
+	from { 	transform: rotate(240deg) translateX(100px) rotate(-240deg); }
+	to   {  transform: rotate(600deg) translateX(100px) rotate(-600deg); }
+}
+
+@media (min-width: 768px) {
+  #rotator-wrapper {
+    width: 50%;
+    .full-copy {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes training {
+  0% { opacity: 0; }
+  3% { opacity: 1; z-index: 1; }
+  30% { opacity: 1;  z-index: 1; }
+  33% { opacity: 0; }
+}
+
+@keyframes environmental {
+  0% { opacity: 0; }
+  30% { opacity: 0; }
+  33% { opacity: 1;  z-index: 1; }
+  60% { opacity: 1;  z-index: 1; }
+  63% { opacity: 0; }
+}
+
+@keyframes health-safety {
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+  63% { opacity: 1;  z-index: 1; }
+  97% { opacity: 1;  z-index: 1; }
+  100% { opacity: 0; }
+}
+
+// rotator copy
+
+#rotator-copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  border: 1px solid red;
+  text-align: center;
+  color: #fff;
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    opacity: 0;
+    &.visible {
+      opacity: 1;
+    }
+  }
+}
+
+// carousel 
+
+#carousel-wrapper {
+  position: relative;
+  margin: 0 20px 3rem 20px;
+  .carousel-block {
+    text-align: center;
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 35%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px;
+  border: 2px solid $primary;
+  svg {
+    fill: $primary;
+  }
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}

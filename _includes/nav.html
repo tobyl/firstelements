@@ -1,0 +1,35 @@
+<div id="nav-wrapper" class="">
+  <button id="nav-close">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.971 47.971"><path d="M28.228 23.986L47.092 5.122a2.998 2.998 0 000-4.242 2.998 2.998 0 00-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 00-4.242 0 2.998 2.998 0 000 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 104.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 000-4.242L28.228 23.986z"/></svg>
+  </button>
+  <nav>
+    <ul id="nav-list">
+      <li>
+        <a href="/services" class="to-fade">Our Services:</a>
+        <ul>
+          <li>
+            <a href="/services/training" class="to-fade">
+              {% include training.html %}
+              <span>Training</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services/health-and-safety" class="to-fade">
+              {% include health-and-safety.html %}
+              <span>Health & Safety</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services/environmental" class="to-fade">
+              {% include environmental.html %}
+              <span>Environmental</span>
+            </a>
+          </li>
+        </ul>  
+      </li>
+      <li><a href="/about-us" class="to-fade">About Us</a></li>
+      <li><a href="/covid-19" class="to-fade">COVID-19</a></li>
+      <li><a href="/contact" class="to-fade">Contact</a></li>
+    </ul>
+  </nav>
+</div>

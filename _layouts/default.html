@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="health and safety, environmental, remediation, training, WHMIS, OHSA, workplace safety, compliance" />
+    <meta name="description" content="First Elements Inc. provides health & safety planning, management and training. Our expert team can help with environmental, health and safety and training compliance.">
+    <meta name="author" content="Toby Leftly">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="page" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="https://firstelements.ca{{ page.url }}" />
+    <meta property="og:site_name" content="First Elements Inc." />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      {% include header.html %}
+      {{ content }}
+      <div class="push"></div>
+      </div>
+      {% include footer.html %}
+      {% include nav.html %}
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
