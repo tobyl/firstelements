@@ -31,6 +31,12 @@ permalink: /covid-19
     </a>
   </li>
   <li>
+    Centers for Disease Control and Prevention:<br />
+    <a href="https://www.cdc.gov/" target="_blank">
+      https://www.cdc.gov/
+    </a>
+  </li>
+  <li>
     Construction Site Health & Safety Guidance:<br />
     <a href="https://www.ontario.ca/page/construction-site-health-and-safety-during-covid-19" target="_blank">
       https://www.ontario.ca/page/construction-site-health-and-safety-during-covid-19
