@@ -19,7 +19,7 @@ permalink: /contact
     <h4>You can contact us at:</h4>
     <address>
       <a href="tel:15194191334">(519) 419-1334</a><br />
-      <a href="mailto:info@firstelements.ca">info@firstelements.ca</a>
+      <a href="mailto:info@firstelementsinc.com">info@firstelementsinc.com</a>
     </address>
   </div>
 </div>
